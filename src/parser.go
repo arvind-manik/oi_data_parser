@@ -37,9 +37,7 @@ func main() {
 
 	fileList, _ := datasetDir.Readdirnames(0)
 	for _, name := range fileList {
-		fmt.Println("File name: %s, Kind: %s", name, reflect.TypeOf(name));
+		records := parseOIData("./sample_dataset/" + name)
+		fmt.Println(records);
 	}
-
-	records := parseOIData("./sample_dataset/fao_participant_oi_30062021.csv")
-	fmt.Println(records);
 }
