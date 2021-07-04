@@ -17,7 +17,7 @@ func parseOIData(filePath string) [][]string {
 
 	csvReader := csv.NewReader(file)
 	records, err := csvReader.ReadAll()
-	
+
 	if err != nil {
 		log.Fatal("Unable to parse CSV data " + filePath, err)
 	}
