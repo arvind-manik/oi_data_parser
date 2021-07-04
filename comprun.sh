@@ -1,2 +1,2 @@
-go build -o bin/ src/*
+go build -o ./bin/ ./src/*
 ./bin/parser
