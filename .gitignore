@@ -85,6 +85,9 @@ lib/generated_plugin_registrant.dart
 *.so
 *.dylib
 
+# Go bin
+/bin/
+
 # Test binary, built with `go test -c`
 *.test
 
